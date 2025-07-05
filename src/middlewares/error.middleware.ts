@@ -1,4 +1,4 @@
-import { NextFunction, Response } from 'express';
+import { NextFunction, Request, Response } from 'express';
 
 export interface AppError extends Error {
   status?: number;
@@ -6,6 +6,7 @@ export interface AppError extends Error {
 
 export const errorHandler = (
   err: AppError,
+  req: Request,
   res: Response,
   _next: NextFunction,
 ) => {
