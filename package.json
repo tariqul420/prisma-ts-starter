@@ -2,10 +2,10 @@
   "name": "prisma-ts-starter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
-    "dev": "nodemon src/index.ts",
-    "start": "tsc && node dist/index.js",
+    "dev": "nodemon src/server.ts",
+    "start": "tsc && node dist/server.js",
     "build": "tsc",
     "format": "prettier --write .",
     "lint": "eslint . --ext .ts,.tsx",
@@ -15,9 +15,16 @@
     "prisma:studio": "prisma studio",
     "prepare": "prisma generate"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "prisma",
+    "typescript",
+    "express",
+    "starter",
+    "boilerplate",
+    "api"
+  ],
+  "author": "Tariqul Islam",
+  "license": "MIT",
   "type": "commonjs",
   "devDependencies": {
     "@types/cookie-parser": "^1.4.9",
