@@ -11,3 +11,5 @@ const router = Router();
 router.post('/create', createUser as RequestHandler);
 router.get('/role/:email', getUserRole as RequestHandler);
 router.put('/update/:email', updateUser as RequestHandler);
+
+export default router;
