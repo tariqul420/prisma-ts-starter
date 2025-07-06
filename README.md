@@ -38,11 +38,17 @@ This project provides a robust and scalable starter template for building RESTfu
 
 Create a `.env` file in the root directory based on `.env.example` and fill in your database URL and JWT secret:
 
-```
-DATABASE_URL="postgresql://user:password@localhost:5432/mydatabase?schema=public"
-PORT=5000
-JWT_SECRET="your_jwt_secret_key"
-COOKIE_SECRET="your_cookie_secret_key"
+```env
+# Server Configuration
+PORT=3000
+NODE_ENV=development
+
+# Authentication Settings
+TOKEN_SECRET=
+TOKEN_NAME=
+
+# MongoDB Database Configuration
+DATABASE_URL=postgresql://user:password@localhost:5432/mydatabase?schema=public
 ```
 
 ### Database Setup
