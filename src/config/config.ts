@@ -11,8 +11,8 @@ const config: IConfig = {
     credentials: true,
   },
   cookie: {
-    tokenSecret: process.env.ACCESS_TOKEN_SECRET || '',
-    tokenName: 'token',
+    tokenSecret: process.env.ACCESS_TOKEN_SECRET as string,
+    tokenName: process.env.TOKEN_NAME as string,
   },
   db: {
     provider: '',
