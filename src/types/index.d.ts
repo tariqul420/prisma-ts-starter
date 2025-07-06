@@ -9,8 +9,4 @@ export interface IConfig {
     tokenSecret: string;
     tokenName: string;
   };
-  db: {
-    provider: string;
-    url: string;
-  };
 }
